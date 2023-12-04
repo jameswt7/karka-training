@@ -1,0 +1,19 @@
+#p1 {
+  color: red;
+}
+#p2 {
+  color: blue;
+}
+.a1 {
+  color: red;
+  text-align: center;
+}
+.a2 {
+  color: aqua;
+}
+.b1 {
+  color: blueviolet;
+}
+* {
+  background-color: burlywood;
+}

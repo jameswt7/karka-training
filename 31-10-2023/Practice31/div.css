@@ -1,0 +1,7 @@
+.div {
+
+    background:teal url("./cat1.jpg") no-repeat;
+    /*background-size: 1600px 700px;*/
+    background-size:cover;
+    background-attachment:fixed; /* image not scroll content page only scroll*/
+}

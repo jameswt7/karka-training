@@ -1,0 +1,6 @@
+print('james')
+# print(input("enter the name"))
+print(1234)
+print("Hello,World.")
+print("Heoll...............World")
+print("Hello!     World")

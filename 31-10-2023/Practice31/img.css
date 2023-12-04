@@ -1,0 +1,7 @@
+body{
+    background-image: url("cat1.jpg");
+    /*background-repeat:repeat-x;*/
+     background-repeat:no-repeat;
+     background-size: 1600px 700px;
+     background-position:top center ;
+}
