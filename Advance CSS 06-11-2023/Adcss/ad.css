@@ -1,0 +1,19 @@
+.b1 {
+  background-color: brown;
+}
+
+.in3 {
+  background-color: rgb(57, 168, 90);
+  /* display: inline; */
+}
+
+
+.sp1 {
+  padding: 20px;
+  background-color: blue;
+  /* display: block; */
+  /* display:none; */
+
+}
+
+.para1 {}

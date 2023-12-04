@@ -1,0 +1,364 @@
+.d2 {
+    border: 5px dotted black;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.p2 {
+    background-color: red;
+}
+
+.p3 {
+    background-color: rgb(47, 156, 45);
+}
+
+
+/* This "d3,d4,..etc" for every child layout of every html page */
+
+.d3 {
+    border: 2px solid black;
+    height: 60px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.d4 {
+    border: 2px dotted black;
+    height: 60px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.d5 {
+    border: 2px black;
+    height: 60px;
+    text-align: center;
+    font-size: x-large;
+    border: double;
+}
+
+/* This is "SC" for overall Div Tag used to scroll the whole page in everyone html page */
+.sc {
+    overflow: scroll;
+}
+
+.sc2 {
+    overflow: scroll;
+}
+
+.sc3 {
+    overflow: scroll;
+}
+
+.sc4 {
+    overflow: scroll;
+}
+
+.sc5 {
+    overflow: scroll;
+}
+
+.sc6 {
+    overflow: scroll;
+}
+
+/* This is "box" for layout of every html page */
+.box1 {
+    border: 5px dotted black;
+    height: 400px;
+}
+
+.box2 {
+    border: 5px dotted black;
+    height: 600px;
+}
+
+.d6 {
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+}
+
+.d7 {
+    border: 2px solid black;
+    width: 500px;
+    height: 50px;
+}
+
+/* here we used to apply padding 50px */
+.box11 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d8 {
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid red;
+    padding: 50px;
+
+}
+
+/* here we used to apply margin 50px */
+.box12 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d9 {
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid red;
+    margin: 50px;
+}
+
+/* here we used to apply padding and margin 50px */
+.box13 {
+    border: 5px dotted black;
+    height: 500px;
+}
+
+.d10 {
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid red;
+    padding: 50px;
+}
+
+.d11 {
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid red;
+    margin: 50px;
+}
+
+/* Here we use to apply css for Position (types - relative, absolute, static, fixed and sticky) */
+.box14 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d12 {
+
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    width: 500px;
+    height: 200px;
+    position: relative;
+    right: 0px;
+}
+
+.d12-child {
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    position: absolute;
+    left: 0px;
+    width: 250px;
+    height: 100px;
+}
+
+.box15 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d13 {
+
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+
+}
+
+.d13-child {
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 100px;
+}
+
+.box16 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d14 {
+
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+
+}
+
+.d14-child {
+    font-weight: bold;
+    border: 3px solid rgb(15, 133, 8);
+    position: absolute;
+    /* center align here using right 130px */
+    right: 130px;
+    width: 250px;
+    height: 100px;
+}
+
+.box17 {
+    border: 5px dotted black;
+    height: 900px;
+}
+
+/* Here we use to apply css for Display (types-none,inline,block,inline-block) */
+.box18 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d15 {
+    border: 2px double rgb(67, 137, 61);
+    height: 200px;
+}
+
+.d15-child {
+
+    border: 3px double rgb(225, 92, 125);
+}
+
+.d15-child2 p {
+
+    display: none;
+}
+
+.d15-child2-a {
+    border: 2px double rgb(225, 92, 125);
+}
+
+.box19 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d16 {
+    border: 3px solid rgb(14, 122, 28);
+    width: auto;
+    height: 260px;
+}
+
+.pout1 {
+    display: inline;
+    /* the default for single inline */
+
+}
+
+.pout2 {
+    display: inline-block;
+    /* to join or merge the 2 words using inline block*/
+
+}
+
+.box20 {
+    border: 5px dotted black;
+    height: 300px;
+}
+
+.d17 {
+    border: 3px solid rgb(14, 122, 28);
+    width: auto;
+    height: 250px;
+}
+
+.pout3 {
+    display: block;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.pout4 {
+    display: block;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.box21 {
+    border: 5px dotted black;
+    height: 900px;
+}
+
+.box22 {
+    border: 5px dotted black;
+    width: auto;
+    height: 300px;
+}
+
+.box23 {
+    border: 5px dotted black;
+    height: 300px;
+    padding: 100px;
+}
+
+.box24 {
+    border: 5px dotted black;
+    height: 300px;
+    overflow: scroll;
+}
+
+.box25 {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    background-color: chartreuse;
+    border: 5px dotted black;
+
+
+}
+
+.img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-color: chartreuse;
+
+}
+
+.box27 {
+    float: right;
+    border: 5px dotted black;
+    width: auto;
+    height: 300px;
+}
+
+.img1 {
+    float: left;
+}
+
+#myDIV {
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+#myDIV div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: yellow;
+    border: 1px solid;
+    opacity: 0.5;
+}
+
+#myBox {
+    position: absolute;
+    background-color: red !important;
+    opacity: 1 !important;
+    z-index: 2;
+}

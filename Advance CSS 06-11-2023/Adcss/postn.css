@@ -1,0 +1,38 @@
+.main {
+    border: 2px solid black;
+    height:1900px;
+    width: 400px;
+    /* position: relative; */
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue; 
+    border: 2px solid black;
+    /* position:absolute ; */
+    /* top: 25px; */
+    /* bottom: 35px;
+    left:30px; */
+    /* display: none; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 16, 16);
+    position: sticky; 
+    top: 10px;
+    /* display: none; */
+    /* left: 200px; */ border: 2px solid black;
+}
+
+.box3 {
+    width: 100px; 
+    border: 2px solid black;
+    height: 100px;
+    background-color: rgb(240, 228, 52);
+
+}
