@@ -1,0 +1,78 @@
+var a =5
+
+var b =5
+function add()
+{
+    
+c= a+b;
+    
+console.log(c)
+
+}
+
+add()
+
+---------------------------------------------------------------------
+
+var b =5
+
+var h =20
+
+
+function areaOftriangle()
+
+{
+    
+c= 1/2*b*h;
+    
+console.log(c)
+
+}
+
+areaOftriangle()
+
+---------------------------------------------------------------------
+var a = prompt("enter the 1st num : ")
+
+var b = prompt("enter the 2nd num : ")
+
+function swap()
+
+{
+  
+[a,b] = [b,a]  
+  
+console.log(a);
+  
+console.log(b);
+
+}
+
+swap()
+---------------------------------------------------------------------
+
+function make_avg(num1, num2, num3) {
+  var total = num1 + num2 + num3;
+  var average = total / 3;
+  return average;
+}
+console.log(make_avg(15, 20, 25))
+
+(or)
+
+var a = parseInt(prompt("Enter First Number: "));
+var b = parseInt(prompt("Enter Second Number: "));
+var c = parseInt(prompt("Enter Third Number: "));
+//Calculate Average
+var average = (a + b + c) / 3;
+//Display Output
+console.log("The average of three numbers: " + average);
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+

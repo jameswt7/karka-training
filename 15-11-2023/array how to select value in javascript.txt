@@ -1,0 +1,55 @@
+var x = [{id: 1, a: true},
+    {id: 2, a: true},
+    {id: 3, a: true},
+    {id: 4, a: true}];
+
+var a = x.select(function(obj) {
+    return obj.id = 2;
+});
+
+console.log(a);
+
+------------------------------------
+JavaScript Demo: Array.values()
+const array1 = ['a', 'b', 'c'];
+const iterator = array1. values();
+for (const value of iterator) {
+console. log(value)
+-----------------------------------------------
+
+// let a = [11,10,"array"]
+// console.log(a)
+
+
+// let b={
+//     name:"james",
+//     age:1,
+// }
+// console.log(b.name)
+----------------------------------------------------------------------------------------------------------------
+
+let mark = {
+    tamil: 182,
+    english: 174,
+    maths: 172,
+    chemistry: 165,
+    physics: 170,
+    biology: 142
+}
+
+//console.log("the",mark.tamil > mark.english);
+
+if (mark.physics && mark.chemistry && mark.maths && mark.biology >= 160) {
+    console.log("you are eligible for Demid College");
+}
+else if (mark.tamil && mark.english && mark.maths && mark.physics >= 150) {
+    console.log("you are eligible for engineering");
+}
+else if (mark.chemistry && mark.physics && mark.biology && mark.maths >= 140) {
+    console.log("Eligible for Bsc course");
+}
+else {
+    console.log("you are not fit for any coures");
+}
+
+----------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcuLator</title>
+</head>
+<body>
+    <form id="frm" onsubmit="callpageload(event)">
+    <label>input value : 1</label><br><br>
+    <input type="text" id="txtinput1" /><br><br><br>
+    <label>input value : 2</label><br><br>
+    <input type="text" id="txtinput2" /><br><br>
+    <label>select the arithematic operation</label><br>
+    <select id="sltoperation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br><br><br><br>
+    <button id="btncalculate" onclick="call()">Calculate Data</button><br><br><br>
+
+    <label id="labelresult"></label><br><br>
+    </form>
+
+    <script src="resume.js"></script>
+</body>
+</html>
