@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Form Fill Up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="formfillup.css" />
+</head>
+
+<body>
+
+    <div class="formfill">
+        <p>Form Fill Up</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2" id="offsetid">
+
+                    <form>
+                        <div class="mb-3">
+                            <label>Full Name</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label>Gender </label>
+                            <input type="radio" value="Male" name="gender" class="form-control" required />
+                            <label>Male </label>
+                            <input type="radio" value="Female" name="gender" class="form-control" required />
+                            <label>Female </label>
+                            <input type="radio" value="Other" name="gender" class="form-control" required />
+                            <label>Other </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>Skill :</label>
+                            <input type="checkbox" name="html" value="Html" class="form-control" required />
+                            <label>HTML </label>
+                            <input type="checkbox" name="css" value="CSS" class="form-control" required />
+                            <label>CSS </label>
+                            <input type="checkbox" name="js" value="js" class="form-control" required />
+                            <label>JS </label><input type="checkbox" name="react" value="REACT" class="form-control"
+                                required />
+                            <label>REACT </label>
+                        </div>
+                        <div class="mb-3">
+                            <label>Choose a Degree :</label>
+                            <select name="degree" class="form-control">
+                                <option value="BE" class="form-control">BE</option>
+                                <option value="BTECH" class="form-control">BTECH</option>
+                                <option value="BCA" class="form-control">BCA</option>
+                                <option value="BSC" class="form-control">BSC COMPUTER SCIENCE</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label>Email Address</label>
+                            <input type="text" name="email" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success save-btn">Save</button>
+                    </form>
+                    <br />
+                    <table class="table table-bordered data-table">
+                        <thead>
+                            <th>Full Name</th>
+                            <th>Date Of Birth</th>
+                            <th>Gender</th>
+                            <th>Skill</th>
+                            <th>Degree</th>
+                            <th>Email Address</th>
+                            <th width="250px">Action</th>
+                        </thead>
+                        <tbody>
+                            <!-- here code append using jquery dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- </div> -->
+    <script src="formfillup.js"></script>
+
+</body>
+
+</html>
