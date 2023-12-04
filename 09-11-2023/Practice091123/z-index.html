@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: +1;
+            /* z-index: -1;  */
+            /* In the Example-1 the z-index is set to -1 therefore,
+            the image appears behind the text but in Example-2 when the z-index is set to+1 the image hides the text.
+       */
+        }
+
+        h1,
+        p {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GeeksforGeeks</h1>
+    <img src="karka.PNG" width="400" height="150">
+    <p>This example shows the use of z-index property.</p>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@media screen and (max-width: 992px) {
+    .body1 {
+        background-color: red;
+        font-size: x-small;
+        font-family: 'Times New Roman', Times, serif;
+        background-image: url(acer-791027_640.jpg);
+
+    }
+
+    .body1 h1 {
+        background-color: rgb(61, 198, 202);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .body1 {
+        background-color: rgb(224, 79, 147);
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: url(karka.PNG);
+    }
+
+    .body1 p {
+        background-color: blue;
+    }
+}
+
+/* @media screen and (max-width: 992px) and (min-width: 600px)
+{
+    .body1 {
+        background-color: red;
+        font-size: x-small;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    
+} */
