@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../05-12-2023/string literals"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "712task"
+	}
+}
