@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Interval</title>
+</head>
+<body>
+    <p id="pid"></p>
+    <button onclick="clearInterval(myVar)">Stop Execution</button>
+
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+
+        function myTimer()
+        {
+            document.getElementById("pid").innerHTML += "<p>Hi</p>;"
+        }
+    </script>
+</body>
+</html>

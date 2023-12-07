@@ -1,0 +1,75 @@
+#data-table {
+    border-style: double;
+    width: 300px;
+    background-color: burlywood;
+    font-weight: bolder;
+    ;
+}
+
+/* CSS for auto increment number */
+#data-table {
+    counter-reset: section;
+}
+
+table tr td:first-child::before {
+    counter-increment: section;
+    content: counter(section);
+    margin: 20px;
+}
+
+
+/* table {
+    counter-reset: rowNumber;
+}
+
+table tr {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before 
+{
+    content: counter(rowNumber);
+} */
+
+/* table {
+   
+    counter-reset: rowNumber;
+}
+
+table tr {
+ 
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    counter-increment: Serial;
+    content: "S.No " counter(rowNumber) ": ";
+} */
+/*-------------------------------------------------------------------------------------------------*/
+ :root {
+    --background: #232349;
+   
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+:root{
+    --background: #232349;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html{
+    background: var(--background);
+    font: 18px sans-serif;
+  }
+  
+  body{
+    text-align: center;
+  }
+   
+/*-------------------------------------------------------------------------------------------------*/

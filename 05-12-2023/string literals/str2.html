@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery mth</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="str.css" />
+
+</head>
+
+<body>
+    <table id="data-table">
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        const students1 = [
+            { name: "manish", age: 22, place: "k" },
+            { name: "ajay", age: 22, place: "tk" },
+            { name: "jemil", age: 23, place: "kkl" },
+            { name: "james", age: 25, place: "ngl" },
+            { name: "mahathi", age: 17, place: "tpn" },
+            { name: "arun", age: 25, place: "md" },
+            { name: "arun", age: 25, place: "md" },
+            { name: "arun", age: 25, place: "md" },
+            { name: "mathan", age: 24, place: "tky" }]
+
+        var html = "<table border='1|1'>";
+        for (var i = 0; i < students1.length; i++) {
+            html += "<tr>";
+            html += "<td>" + students1[i].name + "</td>";
+            html += "<td>" + students1[i].age + "</td>";
+            html += "<td>" + students1[i].place + "</td>";
+            html += "</tr>";
+        }
+        html += "</table>";
+        document.getElementById("data-table1").innerHTML = html;
+    </script>
+    <script src="strl.js"></script>
+</body>
+
+</html>
