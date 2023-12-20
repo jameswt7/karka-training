@@ -1,0 +1,23 @@
+[
+    {
+        id: 1,
+        name: 'JMS T-shirt',
+        price: 499,
+        image:
+            'https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/k/h/j/m-mp-tp01-carrot-metronaut-original-imaghfzkknmzyygf.jpeg?q=70'
+    },
+    {
+        id: 2,
+        name: 'JMS Bag',
+        price: 699,
+        image:
+            'https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/l/z/a/40-rmsx12760-b6-raymond-original-imagtjgjx8udt9an.jpeg?q=70'
+    },
+    {
+        id: 3,
+        name: 'JMS Hoodie',
+        price: 799,
+        image:
+            'https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/b/d/f/3xl-13-lstr-wine-vtexx-original-imagnzbummhkgr7p.jpeg?q=70'
+    }
+]
