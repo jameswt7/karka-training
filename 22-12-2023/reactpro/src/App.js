@@ -1,16 +1,18 @@
 import './App.css';
-import { Form } from './components/Form';
-
-// import Register from './components/Register';
-// import Home from './components/Home';
-// import Layout from './components/Layout';
-
-
-export default function App() {
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Login } from './components/Login';
+import { Register } from './components/Register';
+import { Home } from './components/Home';
+function App() {
   return (
-    <Form />
- 
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/Register" element={<Register/>}/>
+          <Route path="/Home" element={<Home/>}/>
+        </Routes>
+      </Router>
   );
 }
 
-
+export default App;
