@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
-import Home from './components/Home';
-import Videoplay from './components/Videoplay';
+import Home from './components/home';
+import Videoplay from './components/videoplay';
 
 
 export default function App() {
