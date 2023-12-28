@@ -11,21 +11,23 @@ export default function Product(props) {
             key={id}
             className={"product"}
         >
-            <img className={"image-product"} src={imageUrl} alt={name} />
+            <img className={"image-product"} src={imageUrl} alt={`Image of ${name}`} />
             <h3>{name}</h3>
             <p>{description}</p>
-            <span>${price}</span>
+            <span>₹ {price}</span>
             <div>
-                <button
-                    className="snipcart-add-item"
-                    data-item-id={id}
-                    data-item-image={imageUrl}
-                    data-item-name={name}
-                    data-item-url="/"
-                    data-item-price={price}
-                >
-                    Add to Cart
-                </button>
+                
+                    <button
+                        className="snipcart-add-item"
+                        data-item-id={id}
+                        data-item-image={imageUrl}
+                        data-item-name={name}
+                        data-item-url="/"
+                        data-item-price={price}
+                    >
+                        Add to Cart
+                    </button>
+                
             </div>
         </div>
     );

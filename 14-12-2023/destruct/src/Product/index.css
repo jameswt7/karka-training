@@ -2,7 +2,7 @@
     margin: 1%;
     padding: 15px;
     border: 1px solid lightgray;
-    width: 25%;
+    width: 55%;
     border-radius: 5px;
 }
 
@@ -35,6 +35,19 @@
 }
 
 .product .image-product {
-    /*height: 100%;*/
-    width: 100%;
+    /* height: 20%; */
+    width: 60%;
+   
 }
+ /* -------------------------------------; */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 12px;
+  }
+  
+  .item {
+    min-height: 200px;
+    background-color: #eee;
+  }
+  
