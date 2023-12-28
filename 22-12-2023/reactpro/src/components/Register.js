@@ -28,4 +28,8 @@ export const Register = () => {
         <button onClick={handleClick}>Register</button>
     </div>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 182c3595c669ed915f884fdc2906689e165ba883
