@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    width: 100%;
+    height: 500px;
+    background-color: #FFC5C5;
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+ 
+}
+.flexBorder{
+    width: 80%;
+    /* background-color: aqua; */
+    /* height: 300px; */
+    border: 4px solid black; 
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+      
+}
+
+.flex1{
+    width: 100%;
+    background-color:#FFC5C5;
+    height: 400px;
+    display: flex;
+    flex-direction: column; border: 3px solid ; 
+    align-items: center;
+    justify-content: center;
+}
+.flex2{
+    width: 100%;
+    background-color: #FFC5C5;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex3{
+    width: 20%;
+    background-color: burlywood;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    transform: rotate(-90deg);
+}
+.flexOrder{
+  
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-90deg);
+    
+}
+.p1{
+    font-size: 100px;
+    text-align: center;
+    transform: rotate(90deg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+hr {
+    height:5px;
+    border-width:0;
+    background-color:#000000;
+    margin: 10px;
+
+  }
+  .hr3{
+    margin-left: -20px;
+  }
+
+  .bordercut{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:326px ;
+    top: -32px;
+  }
+  .bordercut1{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 45px;
+  }
+  .bordercut2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 85px;
+  }
+  .bordercut3{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 125px;
+  }
+  .bordercut4{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 165px;
+  }
+  .bordercut5{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 205px;
+  }
+  .bordercut6{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 245px;
+  }
+  .bordercut7{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 285px;
+  }
+  .bordercut8{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 335px;
+  }
+  .bordercut9{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 375px;
+  }
+  .bordercut10{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:340px ;
+    top: 425px;
+  }
+  .bordercut11{
+    width: 60px;
+    height: 60px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    right:326px ;
+    top:473px;
+  }
+  .bocut1{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 20px;
+  }
+  .bocut2{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 80px;
+  }
+  .bocut3{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 140px;
+  }
+  .bocut4{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 200px;
+  }
+  .bocut5{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 260px;
+  }
+  .bocut6{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 320px;
+  }
+  .bocut7{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 380px;
+  }
+  .bocut8{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:-24px ;
+    top: 440px;
+  }
+  .edgecut1{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top:20px;
+  }
+  .edgecut2{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 80px;
+  }
+  .edgecut3{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 140px;
+  }
+  .edgecut4{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 200px;
+  }
+  .edgecut5{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 260px;
+  }
+  .edgecut6{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 320px;
+  }
+  .edgecut7{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 380px;
+  }
+  .edgecut8{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    left:1801px;
+    top: 440px;
+  }
