@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR using Javascript and appscript</title>
+    <style>
+        .ocr {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .ocr * {
+            margin-top: 5px;
+        }
+
+        .text {
+            width: 80%;
+            height: 150px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="ocr">
+        <h1>Image And PDF OCR Tool</h1>
+        <h2 class="message"></h2>
+        <span>Select a File</span>
+        <input type="file" class="file">
+        <button class="btn">Perform OCR</button>
+        <span>Result Text</span>
+        <textarea id="myTextArea" class="text"></textarea>
+        <button type="button" onclick="myExtractNum()">Extracted Contact Numbers</button>
+        <div id="outputext">
+            <h2>Extracted Numbers:</h2>
+            <ul id="numberList"></ul>
+        </div>
+    </div>
+    <script>
+        let api = 'https://script.google.com/macros/s/AKfycbxl6QxGvX40ufz2lo6__Wh8sEBtdI8Ft5pzO-8G8plqAABwBvz8JKCtEdJpDjR9nR5XtQ/exec';
+        let msg = document.querySelector(".message");
+        let file = document.querySelector(".file");
+        let btn = document.querySelector(".btn");
+        let text = document.querySelector(".text");
+        btn.addEventListener('click', () => {
+            msg.innerHTML = `Loading..`;
+            let fr = new FileReader();
+            fr.readAsDataURL(file.files[0])
+            fr.onload = () => {
+                let res = fr.result;
+                let b64 = res.split("base64,")[1];
+                fetch(api, {
+                    method: "POST",
+                    body: JSON.stringify({
+                        file: b64,
+                        type: file.files[0].type,
+                        name: file.files[0].name
+                    })
+                })
+                    .then(res => res.text())
+                    .then(data => {
+                        text.innerHTML = data;
+                        msg.innerHTML = ``;
+                    });
+            }
+        })
+
+        function myExtractNum() {
+
+            // Get the input text from the textarea
+            var inputText = document.getElementById('myTextArea').value;
+
+            // Use a regular expression to extract contact numbers
+            var mobileNumberRegex = /\b\d{10}\b/g;
+            var telephoneNumberRegex = /\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b/g;
+            var otherNumberRegex = /\b\d+\b/g;
+
+            var mobileNumbers = inputText.match(mobileNumberRegex) || [];
+            var telephoneNumbers = inputText.match(telephoneNumberRegex) || [];
+            var otherNumbers = inputText.match(otherNumberRegex) || [];
+
+            // Remove white spaces and convert to uppercase
+            mobileNumbers = processNumbers(mobileNumbers);
+            telephoneNumbers = processNumbers(telephoneNumbers);
+            otherNumbers = processNumbers(otherNumbers);
+
+            // Display the extracted numbers dynamically
+            displayNumbers("Mobile Numbers", mobileNumbers);
+            displayNumbers("Telephone Numbers", telephoneNumbers);
+            displayNumbers("Other Numbers", otherNumbers);
+
+        }
+
+        function processNumbers(numbers) {
+            // Remove white spaces and convert to uppercase
+            return numbers.map(function (number) {
+                return number.replace(/\s/g, '').toUpperCase();
+            });
+        }
+
+        function displayNumbers(category,numbers)
+        {
+            var outputList = document.getElementById('numberList');
+            
+            // Create a new list item for each number
+            var categoryHeader = document.createElement('h3');
+            categoryHeader.textContent = category;
+            outputList.appendChild(categoryHeader);
+
+            if (numbers.length > 0) {
+                numbers.forEach(function (number) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = number;
+                    outputList.appendChild(listItem);
+                });
+            } else {
+                // Display a message if no numbers found in the category
+                var noNumbersMessage = document.createElement('li');
+                noNumbersMessage.textContent = 'No numbers found in this category.';
+                outputList.appendChild(noNumbersMessage);
+            }
+        }
+
+    </script>
+
+    <!-- <script>
+        
+    </script> -->
+
+</body>
+
+</html>
