@@ -5,16 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="hom.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Home Page</h1>
-    <p id="userInfo"></p>
-    <div id="visitorCount">Loading...</div>
-    <button onclick="logout()">Logout</button>
-    <script></script>
-    <script src="ecom.js"></script>
+    <div class="container">
+        <div class="header">
+            <header>
+                <h1>My E-commerce Store</h1>
+            </header>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div class="contentbox">
+            <section id="product-list" class="product-list"></section>
+        </div>
+      
+    </div>
+    <script src="ecom2.js"></script>
+   
 </body>
 
 </html>

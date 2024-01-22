@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 899.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/screen-guard/screen-guard/4/b/d/asg-14715-saco-original-imaghqbah9jycshw.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "price": 499.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/a/r/-original-imagwxvrtm25cgbv.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "price": 79.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/ks0onm80/headphone/n/s/g/platinum-earphone-z-60-headphone-xccess-original-imag5zgusvtkv8e7.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 4,
+      "name": "Tablet",
+      "price": 349.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/ktop5e80/tablet/s/l/b/mk2k3hn-a-apple-original-imag6yy7wn9are6s.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 5,
+      "name": "Smartwatch",
+      "price": 199.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/n/9/n/4-6-bxio2003-bxsm2003-bxsm2001-android-ios-beatxp-yes-original-imaguyghgmfvmgup.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 6,
+      "name": "DSLR Camera",
+      "price": 299.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/jfbfde80/camera/n/r/n/canon-eos-3000d-original-imaf3t5hjrz6zzzc.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 7,
+      "name": "Canon Laser Printer",
+      "price": 179.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/kmp7ngw0/printer/i/m/f/lbp6030b-canon-original-imagfjeurfwphbjp.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 8,
+      "name": "SONY Bravia",
+      "price": 219.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/television/6/g/p/-original-imagvgcjagmhmxfz.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 9,
+      "name": "ONIDA AC",
+      "price": 299.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/air-conditioner-new/e/w/o/-original-imagmvdw5qu5k4fw.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 10,
+      "name": "microwave",
+      "price": 195.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/microwave-new/y/t/t/-original-imagqkfykrwhpfqs.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 11,
+      "name": "HAVELLS Mixie",
+      "price": 200.00,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mixer-grinder-juicer/o/j/0/-original-imagp3f2xaqywfx4.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 12,
+      "name": "Prestige Electric Kettle  ",
+      "price": 59.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/electric-kettle/o/z/h/pkoss-prestige-original-imagt3rzhxzghjwj.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 13,
+      "name": "FABER Sandwich Toaster Grill",
+      "price": 79.99,
+      "image": "https://rukminim2.flixcart.com/image/300/300/xif0q/sandwich-maker/t/b/e/sandwich-toaster-grill-fstg-750-bk-faber-original-imagrvrge7dcu5jj.jpeg?q=90"
+    },
+    {
+      "id": 14,
+      "name": "NOVA Hair Dryer",
+      "price": 99.99,
+      "image": "https://rukminim2.flixcart.com/image/128/128/kziqvm80/hair-dryer/o/9/y/professional-nhp-8215-nova-original-imagbgf8yywxpyhw.jpeg?q=70&crop=false"
+    },
+    {
+      "id": 15,
+      "name": "Preethi Coffee Maker",
+      "price": 169.99,
+      "image": "https://rukminim2.flixcart.com/image/416/416/coffee-maker/j/j/c/preethi-cafe-zest-cm-208-drip-cafe-original-imaehu4y2vyrezyx.jpeg?q=70&crop=false"
+    }
+  ]
+

@@ -1,0 +1,97 @@
+// var a = [1, 2, 3, 4, 5, 6, 18]
+
+// function OddorEven() {
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] % 2 === 0) {
+//             console.log("The even is ",a[i])
+//         }
+//         else {
+//             console.log("The Odd is",a[i])
+//         }
+//     }
+// }
+// OddorEven()
+
+// var b = [5,10,25,110,65,4]
+
+// function Maxi_value()
+// {
+//     for(let i=0;i<b.length;i++)
+//     {
+//         if(b[i]>100)
+//         {
+//             console.log("The Maxi value",b[i]);
+//         }
+//     }
+// }
+// Maxi_value()
+
+// var c=[1,5,25,8,25,9]
+// var sum=0;
+// function sumtotal()
+// {
+//     for(let i=0; i<c.length;i++)
+//     {
+       
+//             sum =+ sum +c[i];
+           
+//     }
+//     console.log("The sum is ",sum)   
+        
+// }
+// sumtotal()
+
+// var arr = [3,2,2,2,4,1]
+// var output =[]
+
+// function replacenum(arr,oldvalue,newvalue)
+// {
+//     for(let i=0; i<arr.length;i++)
+//     {
+//         if(arr[i]===0)
+//         {
+//             output.push(arr[i])
+//         }
+//     }
+// }
+// var res = replacenum(arr,2,"*")
+// console.log(res);
+
+// var arr=[3,1,2,12,2,2,3,4,5,2]
+// var output =2
+
+// function rep()
+// {
+//     for (let index = 0; index < arr.length; index++) {
+//         const element = arr[index];
+//         if(element===output)
+//         {
+//             arr[index]="*"
+//         }
+        
+//     }
+//     console.log(arr)
+// }
+// rep()
+
+var arrvalue =[3,1,2,12,2,2,3,4,5,2]
+var output =2
+var c1=[]
+function repla()
+{
+    for (let index = 0; index < arrvalue.length; index++) {
+        const element = arrvalue[index];
+        if(element!=output)
+        {
+            c1.push(element)  
+        }
+       
+    }
+    const len = arrvalue.length-c1.length
+    for(let i=0;i<len;i++)
+    {
+        c1.push("*")
+    }
+    console.log(c1)
+}
+repla()
