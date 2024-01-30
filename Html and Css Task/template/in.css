@@ -553,12 +553,12 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
+    position: relative;
 }
 
 .jsty-cont-cent7 {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -567,35 +567,110 @@
     align-items: center;
     justify-content: space-between;
     text-align: justify;
-    background-color: #fff;
+    margin:30px;
     padding: 30px;
 }
 
 .mySlides1 {
-    width: 33.333%;
-    height: 20%;
+    width: 30%;
     /* border: 2px solid rgb(165, 163, 163); */
-    display: flex;
-    flex-direction: column;
-    word-break: keep-all;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .mySlides2 {
-    width: 33.333%;
-    height: 10%;
+    width: 30%;
     /* border: 2px solid rgb(165, 163, 163); */
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .mySlides3 {
-    width: 33.333%;
-    height: 10%;
+    width: 30%;
     /* border: 2px solid rgb(165, 163, 163); */
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
 }
+.comaRound{
+    height: 68px;
+    width: 73px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    right:228px;
+    top: 95px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.comaRound1{
+    height: 68px;
+    width: 73px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    right:644px;
+    top: 95px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.comaRound2{
+    height: 68px;
+    width: 73px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    right:1047px;
+    top: 95px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
 
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.sect-page8 {
+    background: #fff;
+}
+/* refer site link : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
+.hero-image{
+    background-image: url(elegant-background-wallpaper-preview.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
 
 /* 
