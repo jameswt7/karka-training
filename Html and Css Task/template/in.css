@@ -910,39 +910,47 @@
 }
 .msgbxchat2{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 20%;
     height:470px;
     background: #fff;
+    position: relative;
 }
 .msgbxchat3{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 20%;
     height:470px;
     background: #fff;
+    position: relative;
 }
 .msgbxchat3{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 20%;
     height:470px;
     background: #fff;
+    position: relative;
 }
 .msgbxchat4{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 20%;
     height:470px;
     background: #fff;
+    position: relative;
 }
 .list-flexalign-items{
     display: flex;
