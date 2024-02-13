@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.rw1cls{
+    background-color: #36384c;
+    color: #FFF;
+}
+
+/*#imgcap{
+    background-repeat: no-repeat;
+    background-size: cover; 
+} */
+
+.clshdpcontent{
+    /* position: absolute;
+    right: -30%;
+    top: 40%;    */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFF;
+    text-align: center;
+}
+.clshdpcontent h1{
+    font-size: 100px;
+}
+.clshdpcontent p{
+    font-size: 30px;
+}
+.rw2cls{
+    background-image: url(cappacino.PNG);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 600px;
+  
+}
+
+.rw3cls{
+    background-color:#e9dccd;
+}

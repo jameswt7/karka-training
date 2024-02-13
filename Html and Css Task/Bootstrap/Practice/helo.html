@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" />
+
+</head>
+
+<body>
+    <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Button</p>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+    <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Dropdwon</p>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Card</p>
+    <div class="card" style="width: 18rem;">
+        <img src="../../template/face1.PNG" style="width:172px;height:100px;padding: 10px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Input Group</p>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+      
+      <div class="mb-3">
+        <label for="basic-url" class="form-label">Your vanity URL</label>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+        <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+      
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <br>
+<p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Form Control</p>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Tables</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">images</p>
+
+      <img src="../../template/img-1.PNG" class="img-thumbnail" alt="...">
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Radio Button</p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Second default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+        <label class="form-check-label" for="exampleRadios3">
+          Disabled radio
+        </label>
+      </div>
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Checkbox</p>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Navbar</p>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Carousel/slideer</p>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../../template/img-1.PNG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <p style="background-color: blue;color: red;font-weight: bold; text-align: center;">Alerts/Badges</p>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div>
+      <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+      <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+      <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+      <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+      <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+      <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+      <span class="badge rounded-pill text-bg-primary">Primary</span>
+      <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+      <span class="badge rounded-pill text-bg-success">Success</span>
+      <span class="badge rounded-pill text-bg-danger">Danger</span>
+      <span class="badge rounded-pill text-bg-warning">Warning</span>
+      <span class="badge rounded-pill text-bg-info">Info</span>
+      <span class="badge rounded-pill text-bg-light">Light</span>
+      <span class="badge rounded-pill text-bg-dark">Dark</span>
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+        
+</body>
+
+</html>

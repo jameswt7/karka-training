@@ -1532,6 +1532,8 @@ img {vertical-align: middle;}
     flex-direction: row;
     width: 100%;
     height: 100vh;
+    font-family:'Nunito Sans', Arial, sans-serif;
+    padding: 10px;
 }
 .contactform{
     display: flex;
@@ -1548,10 +1550,16 @@ img {vertical-align: middle;}
 .cntfrmfill{
     display: flex;
     flex-direction: column;
-    
 }
 .cntpyramid{
     width: 50%; 
     background-repeat: no-repeat;
     background-size: cover; 
+}
+.cntaddress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
 }

@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.rw1cls{
+  
+}
+.rw2cls{
+    background-image: url(entryimg.PNG);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 600px;
+  
+}
+.clshdpcontent h1{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.colflximgtrain{
+    background-image: url(https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 550px;
+}
+
+.h2title{
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    color: rgb(29, 29, 29);
+    width: 34.5rem;
+    margin: 0px;
+    word-break: break-word;
+}
+.bgimgdiv{
+    background-image: url(https://s1.rdbuz.com/web/images/homeV2/appinstall/appInstallbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 400px;
+}
+
+/* Example 1 */
+
+.accordion {
+    --bs-accordion-btn-bg: #ffffff;
+    --bs-accordion-active-bg: #d2d2d2;
+    --bs-accordion-active-color: white;
+    --bs-accordion-bg: #8a6879;
+    --bs-accordion-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
+  
+  /* Example 2 */
+  
+  .accordion-flush.accordion {
+    --bs-accordion-btn-bg: #ffffff;
+    --bs-accordion-active-bg: mintcream;
+    --bs-accordion-active-color: #000000;
+    --bs-accordion-bg: mintcream;
+    --bs-accordion-color: #000000;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: unset;
+  }
+  
+  .accordion-flush .accordion-button {
+    border-top: 1px solid #000000;
+  }
+  
+  .accordion-flush .accordion-item:last-child .accordion-button.collapsed,
+  .accordion-flush .accordion-item:last-child .accordion-body {
+    border-bottom: 1px solid #000000;
+  }
+  
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+
+  .spn::after{
+    content: " | ";
+  }

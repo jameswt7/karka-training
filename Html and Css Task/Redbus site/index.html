@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbus Airbus Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
+</head>
+
+<body>
+
+    <div class="rw1cls row navbar-default navbar-fixed-top bg-light">
+
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-1">
+            <img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" alt="redBus" class="rb_logo" title="redBus">
+
+        </div>
+        <div class="col col-lg-1">
+            <span class="vr pt-5 mt-4 mx-5"></span>
+
+        </div>
+        <div class="col col-lg-2 mt-2"><button type="button" class="btn btn-danger"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <img class="bg-light" src="https://st.redbus.in/web/images/layout/rb_vertical.svg" /> Bus Tickets
+            </button> </div>
+
+        <div class="col col-lg-2 mt-2"><button type="button" class="btn btn-light"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <img src="https://st.redbus.in/web/images/layout/rail_vertical.svg" />Train Tickets
+            </button></div>
+        <div class="col col-lg-3"></div>
+        <div class="col col-lg-1">Help</div>
+        <div class="col col-lg-1 btn-group ">
+            <!-- Example single danger button -->
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Account
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                <li><a class="dropdown-item" href="#">Change Travel Date</a></li>
+                <li><a class="dropdown-item" href="#">Show My Ticket</a></li>
+                <li><a class="dropdown-item" href="#">Email/SMS</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Login/ Sign Up</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="rw2cls row">
+        <div class="col col-lg-1">
+        </div>
+        <div class="clshdpcontent col col-lg-12">
+            <h1 class="">India's No. 1 Online Bus Ticket Booking Site</h1>
+            <div class="d-flex justify-content-center mt-5 p-5">
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">From</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">To</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <div class="form-group" id="floatingInput">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar">
+                                            <label for="floatingInput">Date</label>
+                                        </span>
+                                    </span>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker1').datetimepicker();
+                                        });  
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <button type="button" class="btn btn-danger"
+                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                SEARCH BUSES
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-1">
+        </div>
+    </div>
+
+    <div class="sect-rw3cls row bg-light  d-flex justify-content-center position-relative">
+
+        <div class="col col-lg-12 round-5 bg-danger rounded-5 position-absolute mt-5 start-50 translate-middle"
+            style="width:80%;">
+            <h1>TRENDING OFFERS</h1>
+            <div class="col col-lg-1">
+
+            </div>
+            <div class="col col-lg-10">
+                <!-- --------- carousel / slider box content  ----------- -->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active d-flex flex-row mb-3">
+                            <div class="card mb-3 d-block w-100 bg-primary" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5 ">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title ">Bus</h5>
+                                            <p class="card-text">Save up to Rs 250 on bus tickets.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">FIRST</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 d-block w-100 bg-success" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/INDOFFER/SUPERHIT/80x80.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bus</h5>
+                                            <p class="card-text">Save up to Rs 300 on AP, TS routes.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">SUPERHIT</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 d-block w-100 bg-warning" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/INDOFFER/80x80/Chartered.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save up to Rs 300 on Chartered Bus.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">CHARTERED15</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 d-block w-100 bg-danger" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/APSRTC/new/APSRTC_3.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save Up to Rs 250 on bus tickets.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">APSRTCNEW</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item d-flex flex-row ">
+                            <div class="card mb-3 d-block w-100" style="max-width: 300px;max-height: 180px;" class="">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/TSRTC/80x80.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save Up to Rs 250 on bus tickets.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">UPSRTC</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 d-block w-100 bg-danger" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/APSRTC/new/APSRTC_3.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save Up to Rs 250 on bus tickets.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">APSRTCNEW</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 d-block w-100" style="max-width: 300px;max-height: 180px;" class="">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/TSRTC/80x80.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save Up to Rs 250 on bus tickets.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">UPSRTC</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 d-block w-100 bg-warning" style="max-width: 300px;max-height: 180px;">
+                                <div class="row g-0 mt-3">
+                                    <div class="col-md-4 mt-5">
+                                        <img class="card-img-top rounded-circle"
+                                            src="https://st.redbus.in/Images/INDOFFER/80x80/Chartered.png"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUS</h5>
+                                            <p class="card-text">Save up to Rs 300 on Chartered Bus.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Valid till 29
+                                                    Feb</small></p>
+                                            <h5 class="card-title">CHARTERED15</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col col-lg-1">
+
+            </div>
+
+
+
+        </div>
+        <!-- --------- refer and earn box content  ----------- -->
+        <div class="sectsb-rw3cls row">
+            <div class="col col-lg-2"></div>
+            <div class="col col-lg-8">
+                <img src="https://st.redbus.in/Images/99/webreferal.png" style="width: 100%;padding: 200px;" />
+            </div>
+            <div class="col col-lg-2"></div>
+        </div>
+
+    </div>
+
+    <div class="sect4row4 row">
+        <div class="flxrw4 row d-flex flex-row">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-5 d-flex align-self-center">
+                <div class="flxrw4-flxrw2 row d-flex flex-column">
+                    <div class="col col-lg-12 p-5">
+                        <h2 class="h2title">NOW, <b> GET MORE THAN JUST BUS </b> TICKETS WITH REDBUS! </h2>
+                    </div>
+                    <div class="col col-lg-12 p-5">
+                        <p>Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee +
+                            no
+                            payment gateway charge.</p>
+                    </div>
+                    <div class="col col-lg-12 d-flex flex-row gap-3">
+                        <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/railAuthorized.svg" />
+                        <h5 class="mt-5">Authorised IRCTC Partner</h5>
+                    </div>
+                    <div class="col col-lg-12 d-flex flex-row gap-3">
+                        <img src="https://s2.rdbuz.com/web/images/homeV2/AboutUs/railHasslefree.svg" />
+                        <h5 class="mt-5">Instant refunds on UPI payments</h5>
+                    </div>
+                    <div class="col col-lg-12 d-flex flex-row gap-3">
+                        <img src="https://s1.rdbuz.com/web/images/homeV2/AboutUs/railrefunds.svg" />
+                        <h5 class="mt-5">Hassle- free customer support</h5>
+                    </div>
+                    <div class="col col-lg-12 d-flex flex-row p-5">
+                        <button type="button" class="btn btn-danger">Book Train Tickets -></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-lg-5 colflximgtrain ">
+                <img src="railPop.png" />
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+    </div>
+
+    <div class="sect5row5 row">
+        <div class="col col-lg-1"></div>
+        <div class="bgimgdiv col col-lg-10 d-flex flex-row">
+            <div class="ratingrw col col-lg-5 bg-light mx-auto mt-5 rounded-5" style="width: 30%;height: 300px;">
+                <div class="col col-lg-12 d-flex flex-row gap-3">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" />
+                    <h5 class="p-3">Quick access</h5>
+                </div>
+                <div class="col col-lg-12 d-flex flex-row gap-3">
+                    <img src="https://s3.rdbuz.com/web/images/homeV2/appinstall/tick.svg" />
+                    <h5 class="p-3">Superior live tracking</h5>
+                </div>
+                <div class="col-lg-12 d-flex flex-row mt-5">
+                    <div class="col col-lg-6 d-flex flex-column">
+                        <text><label>4.5 <li class="fa fa-star"></li></label></text>
+
+                        <text>50M+ downloads</text>
+                        <text>Play Store</text>
+                    </div>
+                    <div class="d-flex" style="height: 70px;">
+                        <div class="vr"></div>
+                    </div>
+                    <div class="col col-lg-6 d-flex flex-column">
+                        <text><label>4.6 <li class="fa fa-star"></li></label></text>
+
+                        <text>50M+ downloads</text>
+                        <text>App Store</text>
+                    </div>
+                </div>
+
+            </div>
+            <div class="appdwld col col-lg-5 d-flex flex-row">
+                <div class="col col-lg-4 mt-5">
+                    <h3 class="text-light pt-2">Scan to download</h3>
+                    <img class="pt-2" src="https://s1.rdbuz.com/web/images/homeV2/qrCode.svg" />
+                </div>
+                <div class="col col-lg-4 d-flex flex-column mt-5">
+                    <h3 class="text-light pt-2">Download the App on</h3>
+                    <img class="pt-2" src="https://s2.rdbuz.com/web/images/homeV2/appinstall/playStore.svg" />
+                    <img class="pt-2" src="https://s3.rdbuz.com/web/images/homeV2/appinstall/appStore.svg" />
+                </div>
+            </div>
+            <div class="col col-lg-2">
+
+            </div>
+        </div>
+        <div class="col col-lg-1"></div>
+    </div>
+
+    <div class="sect6row6 row mt-5">
+        <div class="col col-lg-4">
+        </div>
+        <div class="col col-lg-4">
+            <img src="https://s1.rdbuz.com/web/images/homeV2/primoSection/primoTopBanner.svg" />
+        </div>
+        <div class="col col-lg-4">
+        </div>
+    </div>
+
+    <div class="sect7row7 row mt-5 d-flex flex-row align-self-center">
+
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-3 bg-danger bg-gradient rounded-5 d-flex flex-row" style="width: 25%;height: 200px;">
+            <div class="col col-lg-4 mt-5"><img
+                    src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg1.svg" /></div>
+            <div class="col col-lg-8">
+                <text>
+                    <h2 class="text-light"><b>1 of 5 buses qualify</b></h2>
+                </text>
+                <text>
+                    <h4 class="text-light">Primo’s strict safety qualification ensures a safer travel for you</h4>
+                </text>
+            </div>
+
+        </div>
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-3 bg-danger rounded-5 d-flex flex-row" style="width: 25%;height: 200px;">
+
+            <div class="col col-lg-4 mt-5"><img
+                    src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg1.svg" /></div>
+            <div class="col col-lg-8">
+                <text>
+                    <h2 class="text-light"><b>Preferred by 90%</b></h2>
+                </text>
+                <text>
+                    <h4 class="text-light">90% of travellers re-book Primo buses for its punctuality and comfort</h4>
+                </text>
+            </div>
+
+        </div>
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-2 bg-danger rounded-5 d-flex flex-row" style="width: 25%;height: 200px;">
+            <div class="col col-lg-4 mt-5"><img
+                    src="https://s2.rdbuz.com/web/images/homeV2/primoSection/primoSubImg1.svg" /></div>
+            <div class="col col-lg-6">
+                <text>
+                    <h2 class="text-light"><b>9 Lac+ monthly travellers</b></h2>
+                </text>
+                <text>
+                    <h4 class="text-light">In 2022, 9 Lac+ people traveled with Primo every month</h4>
+                </text>
+            </div>
+        </div>
+        <div class="col col-lg-1"></div>
+
+    </div>
+
+    <div class="sect8row8 row mt-5">
+        <div class="col col-lg-1"></div>
+        <div class="col col-lg-10 ">
+            <h1>PARTNERED WITH</h1>
+        </div>
+        <div class="col col-lg-1"></div>
+        <div class="subrow8 d-flex flex-row justify-content-between">
+
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-4">
+                <h3>25 RTCs</h3>
+            </div>
+            <div class="col col-lg-2"></div>
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-2"><button type="button" class="btn btn-light"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    <h3> View All</h3>
+                </button>
+            </div>
+
+            <div class="col col-lg-1"></div>
+        </div>
+        <div class="col col-lg-12 d-flex flex-row justify-content-evenly">
+            <div><img src="https://st.redbus.in/buslogos/country/ind/logo_group/10283.png" /></div>
+            <div><img src="https://s3.rdbuz.com/web/images/homeV2/rtc/GSRTC.svg" /></div>
+            <div><img class="card-img-top rounded-circle" style="width: 100px;"
+                    src="https://st.redbus.in/Images/carousel/TSRTC.png" /></div>
+            <div><img class="rounded-pill" style="width: 80px;"
+                    src="https://st.redbus.in/buslogos/country/ind/logo_group/10823.png" /></div>
+            <div><img src="https://s3.rdbuz.com/web/images/homeV2/rtc/KERALA-RTC.svg" /></div>
+            <div><img style="width: 100px;" src="https://st.redbus.in/buslogos/country/ind/logo_group/16426.png" />
+            </div>
+            <div><img src="https://s3.rdbuz.com/web/images/homeV2/rtc/RSRTC.svg" /></div>
+        </div>
+
+    </div>
+
+    <div class="sect9row9 row mt-5">
+
+        <div class="subrow9 row d-flex flex-row justify-content-between">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-4">
+                <h1>3500+ Private Bus Operators</h1>
+            </div>
+            <div class="col col-lg-2"></div>
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-2"><button type="button" class="btn btn-light"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    <h3> View All</h3>
+                </button>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+        <div class="subrow9-2rw row d-flex flex-row justify-content-evenly mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex flex-row justify-content-evenly">
+                <div>
+                    <h4 class="p-4">SRS Travels</h4>
+                    <h4 class="p-4">Rajdhani Express</h4>
+                    <h4 class="p-4">Infant Jesus</h4>
+                    <h4 class="p-4">Kanker Roadways</h4>
+                    <h4 class="p-4">Raj Express</h4>
+                </div>
+                <div>
+                    <h4 class="p-4">Kallada Travels</h4>
+                    <h4 class="p-4">VRL Travels</h4>
+                    <h4 class="p-4">Patel Travels</h4>
+                    <h4 class="p-4">Komitla</h4>
+                    <h4 class="p-4">Sharma Travels</h4>
+                </div>
+                <div>
+                    <h4 class="p-4">KPN Travelss</h4>
+                    <h4 class="p-4">Chartered Speed Bus</h4>
+                    <h4 class="p-4">JBT Travels</h4>
+                    <h4 class="p-4">Sri Krishna Travels</h4>
+                    <h4 class="p-4">Shrinath Travels</h4>
+                </div>
+                <div>
+                    <h4 class="p-4">Orange Travels</h4>
+                    <h4 class="p-4">Bengal Tiger</h4>
+                    <h4 class="p-4">Shatabdi Travels</h4>
+                    <h4 class="p-4">Humsafar Travels</h4>
+                </div>
+                <div>
+                    <h4 class="p-4">Parveen Travels</h4>
+                    <h4 class="p-4">SRM Travels</h4>
+                    <h4 class="p-4">Eagle Travels</h4>
+                    <h4 class="p-4">Mahasagar Travels</h4>
+                </div>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+    </div>
+    <div class="sect10row10">
+        <div class="headingrw10 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex justify-content-start">
+                <h1 class="">GLOBAL PRESENCE</h1>
+            </div>
+
+            <div class="col col-lg-1"></div>
+        </div>
+
+
+        <div class="subsectrw10 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex flex-row justify-content-evenly">
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Colombia.svg" />
+                    <h3 class="m-4">Colombia</h3>
+                </div>
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/India.svg" />
+                    <h3 class="m-4">India</h3>
+                </div>
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Indonesia.svg" />
+                    <h3 class="m-4">Indonesia</h3>
+                </div>
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Malaysia.svg" />
+                    <h3 class="m-4">Malaysia</h3>
+                </div>
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Peru.svg" />
+                    <h3 class="m-4">Peru</h3>
+                </div>
+                <div><img src="https://s3.rdbuz.com/web/images/homeV2/LATAM/GlobalPresence/Singapore.svg" />
+                    <h3 class="m-4">Singapore</h3>
+                </div>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+    </div>
+
+    <div class="sect11row11">
+        <div class="headingrw11 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex justify-content-start">
+                <h1 class="">BOOK BUS TICKETS ONLINE</h1>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+        <div class="subsectrw11 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex flex-column justify-content-evenly">
+                <div>
+                    <p class="m-4">
+                    <h3>redBus is India's largest brand for online bus ticket booking and offers an
+                        easy-to-use online bus ticket and train ticket booking service, With over 36 million satisfied
+                        customers, 3500+ bus operators to choose from, and plenty of offers on bus ticket booking,
+                        redBus makes road journeys super convenient for travelers. A leading platform for booking bus
+                        tickets, redBus has been the leader in online bus booking over the past 17 years across
+                        thousands of cities and lakhs of routes in India.</h3>
+                    </p>
+                </div>
+                <div>
+                    <p class="m-4">
+                    <h3> a bus ticket online on redBus app or website is very simple. You can download the redBus
+                        app or visit redbus.in and enter your source, destination & travel date to check the top-rated
+                        bus services available. You can then compare bus prices, user ratings & bus amenities, select
+                        your preferred seat, boarding & dropping points and make the payment using multiple payment
+                        options like UPI, debit or credit card, net banking and more. With redBus get assured safe &
+                        secure payment methods and guaranteed travel with the best seat and bus operato... <a
+                            href="#">Read more</a></h3>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+    </div>
+
+    <div class="sect12row12">
+        <div class="headrw12 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex justify-content-start">
+                <h1 class="">Bus Booking redDeals on redBus</h1>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+        <div class="rwpara row">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10">
+                <p>
+                <h3>Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and
+                    affordability. Hurry, grab the best bus booking deals before they're gone!</h3>
+                </p>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+        <div class="rwAdvertise row">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 border rounded-4 mt-5">
+                <div class="col-lg-1 mt-5"><img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" /></div>
+                <div class="col col-lg-8 d-flex flex-column">
+                    <h2 style="font-weight: bold;">Unlock Unbeatable Exclusive redDeals! <span class="text-danger">%
+                            OFF</span></h2>
+                    <div class="d-flex flex-row">
+                        <h4 class="p-4"><span class="text-danger">4008</span> Deals</h4>
+                        <span class="vr"></span>
+                        <h4 class="p-4"><span class="text-danger">1623</span> Bus Operators</h4>
+                        <span class="vr"></span>
+                        <h4 class="p-4"><span class="text-danger">199834</span> Routes</h4>
+                    </div>
+                </div>
+                <div class="col col-lg-3 mt-5">
+                    <button class="btn btn-danger rounded-4" style="width: 200px;height: 70px; ">
+                        <h3>Book Now</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-1"></div>
+    </div>
+
+
+    <div class="sect13row13">
+        <div class="headrw13 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 d-flex justify-content-start">
+                <h1 class="">FAQs related to Bus Tickets Booking</h1>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+        <div class="menubarnav row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-6 d-flex flex-row justify-content-evenly">
+                <div><button type="button" class="btn btn-light">
+                        <h3>General</h3>
+                    </button type="button" class="btn btn-light"></div>
+                <div><button type="button" class="btn btn-light">
+                        <h3>Ticket-related</h3>
+                    </button></div>
+                <div><button type="button" class="btn btn-light">
+                        <h3>Payment</h3>
+                    </button></div>
+                <div><button type="button" class="btn btn-light">
+                        <h3>Cancellation & Refund</h3>
+                    </button></div>
+                <div><button type="button" class="btn btn-light">
+                        <h3>Insurance</h3>
+                    </button> </div>
+            </div>
+            <div class="col col-lg-3"></div>
+            <div class="col col-lg-2"></div>
+        </div>
+
+        <div class="accordianbtn row">
+
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Can I track the location of my booked bus online?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Yes, you can track your bus online by using our bus tracking app feature called
+                                    “Track My Bus”. This feature allows passengers and their families to track the live
+                                    bus tracking location. You may follow your bus on a map and use the information to
+                                    plan your trip to the boarding point and to get off at the correct stop. Family and
+                                    friends may also check the bus position to plan pick-ups and ensure your safety.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>What are the advantages of purchasing a bus ticket with redBus?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p> There are many advantages to purchasing online bus tickets with redBus. redBus is
+                                    India’s most trusted bus ticket company, where you can book any type of private or
+                                    Government owned buses. redBus allows you to find the different types of buses,
+                                    choose the preferred bus seats, and your nearest boarding and dropping points. You
+                                    can also filter the buses based on timings like morning, evening bus etc. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4> Why book bus tickets online on redBus?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Booking bus tickets online on redBus is increasingly becoming the preferred choice
+                                    for travelers due to its numerous advantages over traditional methods.With redBus,
+                                    customers can book their bus tickets effortlessly from the comfort of their homes,
+                                    avoiding the inconvenience of standing in long lines at bus stations or travel
+                                    agencies. Online bus booking not only offers the luxury of comparing different bus
+                                    schedules and operators but also presents various discount offers and exclusive
+                                    deals, resulting in significant savings.</p>
+                                <p>Payment security is another notable feature of online booking, which ensures that
+                                    your financial information is well-protected against fraud. Additionally, customers
+                                    get the privilege to pick their seats, providing a customized travel experience.
+                                    Online bus booking platforms give real-time updates about any changes in the bus
+                                    timetable, including delays or cancellations, enabling better planning.</p>
+                                <p>The convenience doesn't stop here; travelers can even compare onboard amenities like
+                                    charging points or snacks, further enhancing the travel experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h4>Do I need to create an account on the redBus site to book my bus ticket?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>No, you don’t have to create an account on redBus site to book your bus ticket. But
+                                    it is advisable to create one to accelerate the process next time you want to book
+                                    bus tickets. Also redBus has many discounts and offers that you can easily access if
+                                    you have an account with us.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h4>Does bus booking online cost me more?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Not at all! The price of the bus ticket is the same as you would get from the bus
+                                    operator/ counter of any bus ticket agency. Redbus reduces the travel budget by
+                                    comparing the bus ticket prices among various operators, making it a more
+                                    cost-effective choice. Therefore, online bus booking is increasingly being
+                                    recognized as a more convenient, efficient, and economical mode of securing travel
+                                    arrangements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h4> How can I get the discounts on the bus booking?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>To get the discount on bus booking please visit:
+                                    https://www.redbus.in/info/OfferTerms and check the available offers. Copy the
+                                    coupon code and paste it during checkout to avail the discount.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <h4>What's New in Bus Booking on redBus?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Primo Bus Ticket: redBus has launched Primo bus services, where passengers can enjoy
+                                    traveling in high-rated buses with best-in-class services. While looking for bus
+                                    tickets on the desired route, customers can check the Primo tag to choose this
+                                    excellent service. From hygiene standards to on-time service and comfort, passengers
+                                    can benefit from online bus booking experience from Primo buses.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <h4> Can I book a Government bus ticket on redBus?</h4>
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Yes, you can book government </p><b>bus tickets</b> on redBus. redBus has extended
+                                its <b>bus booking</b> services to many RTCs in India. Some of these RTCs are <a
+                                    href="https://www.redbus.in/online-booking/apsrtc">Andhra Pradesh State Road
+                                    Transport Corporation </a>(APSRTC),<a
+                                    href="https://www.redbus.in/online-booking/astc"> Assam State Transport
+                                    Corporation</a> (ASTC),<a
+                                    href="https://www.redbus.in/online-booking/bihar-state-tourism-development-corporation">Bihar
+                                    State Tourism Development Corporation </a>(BSTDC).
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+    </div>
+
+    <div class="sect14row14">
+        <div class="headtltrw14 row mt-5">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10">
+                <div class="accordion" id="accordionExample">
+                    <!-- <div class="accordion-item"> -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                            <h3>Popular Bus Routes</h3>
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Manali Bus</a>
+                            </span> <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Rishikesh Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Shimla Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Nainital Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Katra Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Goa Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <!-- <div class="accordion-item"> -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                            <h3>Popular Cities</h3>
+                        </button>
+                    </h2>
+                    <div id="collapseTwelve" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Manali Bus</a>
+                            </span> <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Rishikesh Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Shimla Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Nainital Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Katra Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Goa Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <!-- <div class="accordion-item"> -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                            <h3>Popular Operators</h3>
+                        </button>
+                    </h2>
+                    <div id="collapseThirteen" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Manali Bus</a>
+                            </span> <span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Rishikesh Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Shimla Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Nainital Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Delhi To Katra Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Goa Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Hyderabad Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Tirupathi Bus</a>
+                            </span><span class="spn"><a href="https://www.redbus.in/bus-tickets/delhi-to-manali"
+                                    target="_blank">Bangalore To Chennai Bus</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+
+
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+    </div>
+
+    <div class="sect15row15 mt-5">
+        <div class="col col-lg-1">
+
+        </div>
+        <div class="col col-lg-10 d-flex flex-row">
+            <div class="fstsectlayer col col-lg-3 d-flex flex-column mt-5">
+                <div class="mt-5"><img src="https://st.redbus.in/Images/rdc/rdc-redbus-logo.svg" /></div>
+                <div class="mt-3">
+                    <p>redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                        customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile
+                        apps for all major routes.</p>
+                </div>
+            </div>
+            <div class="secndsectlayer col col-lg-2 d-flex flex-column mt-5">
+                <div><a style="color: black;" href="#">
+                        <h4><b>About redBus</b></h4>
+                    </a></div>
+                <div><a href="#">About us</a></div>
+                <div><a href="#">Investor Relations</a></div>
+                <div><a href="#">Contact us</a></div>
+                <div><a href="#">Mobile version</a></div>
+                <div><a href="#">redBus on mobile</a></div>
+                <div><a href="#">Sitemap</a></div>
+                <div><a href="#">Offers</a></div>
+                <div><a href="#">Careers</a></div>
+                <div><a href="#">Values</a></div>
+            </div>
+            <div class="thrdsectlayer col col-lg-3 d-flex flex-column mt-5">
+                <div><a style="color: black;" href="#">
+                        <h4><b>Info</b></h4>
+                    </a></div>
+                <div><a href="#">T&C</a></div>
+                <div><a href="#">Privacy policy</a></div>
+                <div><a href="#">FAQ</a></div>
+                <div><a href="#">Blog</a></div>
+                <div><a href="#">Bus operator registration</a></div>
+                <div><a href="#">Insurance partner</a></div>
+                <div><a href="#">User agreement</a></div>
+            </div>
+            <div class="fursectlayer col col-lg-2 d-flex flex-column mt-5">
+                <div><a style="color: black;" href="#">
+                        <h4><b>Global Sites</b></h4>
+                    </a></div>
+                <div><a href="#">India</a></div>
+                <div><a href="#">Singapore</a></div>
+                <div><a href="#">Malaysia</a></div>
+                <div><a href="#">Indonesia</a></div>
+                <div><a href="#">Peru</a></div>
+                <div><a href="#">Colombia</a></div>
+            </div>
+            <div class="fivesectlayer col col-lg-2 d-flex flex-column mt-5">
+                <div><a style="color: black;" href="#">
+                        <h4><b>Our Partners</b></h4>
+                    </a></div>
+                <div><a href="#">Goibibo Bus</a></div>
+                <div><a href="#">Goibibo Hotels</a></div>
+                <div><a href="#">Makemytrip Hotels</a></div>
+            </div>
+        </div>
+        <div class="col col-lg-1">
+
+        </div>
+    </div>
+    
+
+
+
+    <!-- <script>
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });  
+    </script> -->
+    <!-- <div class="d-flex" style="height: 600px;">
+        <div class="vr" style="transform: rotate(-90deg);"></div>
+    </div> -->
+
+</body>
+
+</html>
