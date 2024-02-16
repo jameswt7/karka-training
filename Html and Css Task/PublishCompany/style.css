@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.circlernd1{
+    width:120px;
+    height:120px;
+    background-color: #f5f4f0;
+}
+.insidecircle1{
+    width:20px;
+    height: 20px;
+    background-color: red;
+}
+.insidecircle2{
+    width:20px;
+    height: 20px;
+    background-color: red;
+}
+.insidecircle3{
+    width:20px;
+    height: 20px;
+    background-color: red;
+}
+.insidecircle4{
+    width:20px;
+    height: 20px;
+    background-color: red;
+}
+.circlernd1:hover{
+    background-color: #95adbe;
+   
+}
+.circlernd2:hover{
+    background-color: #95adbe;
+   
+}
+.circlernd3:hover{
+    background-color: #95adbe;
+   
+}
+.circlernd4:hover{
+    background-color: #95adbe;
+   
+}
+.insidecircle1:hover{
+    background-color: white;
+}
+.insidecircle2:hover{
+    background-color: white;
+}
+.insidecircle3:hover{
+    background-color: white;
+}
+.insidecircle4:hover{
+    background-color: white;
+}
+.circlernd2{
+    width:120px;
+    height: 120px;
+    background-color: #f5f4f0;
+}
+.circlernd3{
+    width:120px;
+    height: 120px;
+    background-color: #f5f4f0;
+}
+.circlernd4{
+    width:120px;
+    height: 120px;
+    background-color: #f5f4f0;
+}
+
+.rw7{
+    background-image: url(bg-groupteam.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+.card{
+    padding:0;
+    
+  }
+  .card-wrapper{
+    
+  }
