@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stop.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row bg-warning ">
+            <div class="col col-lg-12 d-flex justify-content-center align-items-center">
+                <h1>STOP WATCH</h1>
+            </div>
+        </div>
+        <div class="rowcal row mt-5" style="height: 300px;">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 bg-success d-flex flex-column mt-5">
+                <div class="col-lg-12 bg-danger mt-5 d-flex justify-content-center align-items-center" style=" height: 100px;">
+                    <span class="digit" id="hr">00</span>
+                    <span class="txt"> Hr</span>
+                    <span class="digit" id="min">00</span>
+                    <span class="txt">Min</span>
+                    <span class="digit" id="sec">00</span>  
+                    <span class="txt">Sec</span>
+                    <span class="digit" id="count">00</span>
+                </div>
+                <div class="col-lg-12 bg-info d-flex justify-content-center align-items-center" style=" height: 100px;">
+                    <button class="btn bg-success" id="start"  style="width: 100px; height: 50px;">Start</button>
+                    <button class="btn bg-warning" id="stop"  style="width: 100px; height: 50px;">Stop</button>
+                    <button class="btn bg-success" id="reset"  style="width: 100px; height: 50px;">Reset</button>
+                </div>
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+    </div>
+
+    <script src="stop.js"></script>
+</body>
+
+</html>
