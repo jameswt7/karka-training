@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(251, 162, 238); */
+}
+
+.container-fluid{
+    background-image: url(../template/amsterdam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* styles.css */
+
+
+input[type="text"],
+input[type="password"],
+button {
+ 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
