@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="headersection">
+
+
+            <h2>Welcome to ChitChat Messenger</h2>
+            <p>You are logged in!</p>
+            <button id="clearChatBtn"  style="width: 100px;">Clear All Messages</button>
+            <button onclick="logout()" style="width: 100px;" >Logout</button> 
+        </div>
+        <div class="containerMsgbox">
+
+            <div class="Msgbox">
+
+
+                <div id="chatBox"></div>
+                <div class="flexboxmessage">
+                
+                    <input type="text" id="messageInput" style="width: 550px;" placeholder="Type a message...">
+                    <button id="sendMessageBtn" style="width: 100px;">Send</button>
+
+                    <button id="sendImageButton" style="width: 100px; margin: 10px;" >Send Image</button>
+                    <input type="file" id="imageInput" style="display: none;">
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
