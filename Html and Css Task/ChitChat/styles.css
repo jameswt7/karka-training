@@ -74,23 +74,25 @@ button[type="button"]:hover {
     justify-content: space-evenly;
 }
 
-.containerMsgbox{
+/* .containerMsgbox{
     background-color: rgb(147, 146, 144);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 200vh;
+    width: 100vh;
     height: 500px;
-}
+} */
 
 #chatBox {
     margin-bottom: 20px;
     padding: 10px;
-    width: 900px;
+    width: 1200px;
     height: 400px;
     overflow-y: auto;
     border: 1px solid #ccc;
     background-color: #fff;
+
+    border-radius: 10px;
 }
 
 #messageInput {
@@ -102,6 +104,30 @@ button[type="button"]:hover {
 .flexboxmessage{
     display: flex;
     flex-direction: row;
- 
-
 }
+
+/* styles.css */
+/* styles.css */
+
+.message-container {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse column direction for appending messages from top to bottom */
+    
+}
+
+.message {
+    align-self: flex-end; /* Align messages to the right */
+    background-color: #DCF8C6;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    max-width: 70%; /* Limit message width */
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+

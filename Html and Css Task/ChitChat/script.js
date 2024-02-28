@@ -97,17 +97,83 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageElement = document.createElement('div');
         messageElement.textContent = message;
         messageElement.classList.add('message');
-        chatBox.appendChild(messageElement);
-        // Scroll to the bottom of the chat box
-        chatBox.scrollTop = chatBox.scrollHeight;
+        // chatBox.prepend(messageElement); // Append message to the top
+        chatBox.appendChild(messageElement); // Append message to the bottom
+        scrollToBottom();
     }
 
     function appendImage(imageUrl) {
         const imageElement = document.createElement('img');
         imageElement.src = imageUrl;
         imageElement.classList.add('image');
-        chatBox.appendChild(imageElement);
-        // Scroll to the bottom of the chat box
+        
+        chatBox.appendChild(imageElement); // Append image to the bottom
+        scrollToBottom();
+    }
+
+    function scrollToBottom() {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 });
+
+
+
+// script.js
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const chatBox = document.getElementById('chatBox');
+//     const imageInput = document.getElementById('imageInput');
+//     const messageInput = document.getElementById('messageInput');
+//     const sendMessageBtn = document.getElementById('sendMessageBtn');
+//     const sendImageButton = document.getElementById('sendImageButton');
+//     const clearChatBtn = document.getElementById('clearChatBtn');
+
+//     sendMessageBtn.addEventListener('click', function() {
+//         // const message = prompt('Enter your message:');
+//         const message = messageInput.value.trim();
+//         if (message !== null && message.trim() !== '') {
+//             appendMessage(message);
+//             messageInput.value = ''; // Clear the input field
+//         }
+//     });
+
+//     sendImageButton.addEventListener('click', function() {
+//         imageInput.click(); // Click the hidden file input
+//     });
+
+//     imageInput.addEventListener('change', function() {
+//         const file = this.files[0];
+//         if (file) {
+//             const reader = new FileReader();
+//             reader.onload = function(e) {
+//                 const imageUrl = e.target.result;
+//                 appendImage(imageUrl);
+//             };
+//             reader.readAsDataURL(file);
+//         }
+//     });
+
+//     clearChatBtn.addEventListener('click', function() {
+//         chatBox.innerHTML = ''; // Clear the chat box content
+//     });
+
+//     function appendMessage(message) {
+//         const messageElement = document.createElement('div');
+//         messageElement.textContent = message;
+//         messageElement.classList.add('message');
+//         chatBox.appendChild(messageElement);
+//         // Scroll to the bottom of the chat box
+//         chatBox.scrollTop = chatBox.scrollHeight;
+//         chatBox.prepend(messageElement); // Append message to the top
+//     }
+
+//     function appendImage(imageUrl) {
+//         const imageElement = document.createElement('img');
+//         imageElement.src = imageUrl;
+//         imageElement.classList.add('image');
+//         chatBox.appendChild(imageElement);
+//         // Scroll to the bottom of the chat box
+//         chatBox.scrollTop = chatBox.scrollHeight;
+//         chatBox.prepend(imageElement); // Append image to the top
+//     }
+// });
