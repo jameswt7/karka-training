@@ -124,8 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function appendMessage(message) {
+        const timestamp = new Date().toLocaleTimeString(); // Get current time
         const messageElement = document.createElement('div');
-        messageElement.textContent = message;
+        messageElement.textContent = `[${timestamp}] ${message}`; // Append timestamp to message
         messageElement.classList.add('message');
         // chatBox.prepend(messageElement); // Append message to the top
         chatBox.appendChild(messageElement); // Append message to the bottom
@@ -164,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function () {
             messageInput.value = ''; // Clear the input field
         }
     }
+// Save user's name in local storage when logging in
+localStorage.setItem('userName', 'John');
 
 });
 
