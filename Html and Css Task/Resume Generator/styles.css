@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: ivory;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    border: 1px solid;
+    border-radius: 10px;
+    color: darkmagenta;
+    background-color: rgb(193, 149, 234);
+}
+
+button {
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    font-size: larger;
+    background-color: blueviolet;
+
+}
+
+.row1div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.row2div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.row3div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.row4div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.row5div {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.row6div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.row7div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 1200px;
+}
+
+.row8div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+.row9div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+
+}
+.row10div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    width: 400px;
+}

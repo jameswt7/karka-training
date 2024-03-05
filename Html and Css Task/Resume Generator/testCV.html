@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Resume Builder</h1>
+    <!-- <form id="resumeForm">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <!-- Add more fields for personal information as needed -->
+
+        <!--<h2>Education Details</h2>
+        <table id="educationTable">
+            <tr>
+                <th>School/University</th>
+                <th>Degree</th>
+                <th>Graduation Year</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="school1"></td>
+                <td><input type="text" name="degree1"></td>
+                <td><input type="number" name="gradYear1"></td>
+            </tr>
+            <!-- You can add more rows for additional education details -->
+           <!-- </table>
+
+        <!-- Add more sections for work experience, skills, etc. -->
+          <!--  <input type="submit" id="submit-form" value="Submit" />
+        <!-- <button type="submit" >Generate Resume</button> -->
+      <!--  </form> -->
+
+      <form id="dataForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit" id="generatePdfButton">Generate PDF</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            const formData = new FormData(event.target);
+
+            // Generate PDF
+            const pdf = new jsPDF();
+            formData.forEach((value, key) => {
+                pdf.text(`${key}: ${value}`, 10, 10); // Add form data to PDF
+            });
+
+            // Download PDF
+            pdf.save('form_data.pdf');
+        });
+    </script>
+
+    
+    <script src="testcvjs.js"></script>
+</body>
+
+</html>
