@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD Operation</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>CuRD Form</h1>
+        <form id="dataForm">
+            <label for="name" style="font-weight: bolder;">Name</label>
+            <input type="text" id="name" name="name">
+            </br>
+            <label for="date" style="font-weight: bolder;">DOB</label>
+            <input type="date" id="date" name="date"></br></br>
+            <label for="skill" style="font-weight: bolder;">Skill</label></br>
+            <input type="checkbox" name="skill" id="js" value="Js">JS</input>
+            <input type="checkbox" name="skill" id="css" value="Css">CSS</input>
+            <input type="checkbox" name="skill" id="html" value="Html">HTML</input>
+            <input type="checkbox" name="skill" id="dotnet" value="Dotnet">DOTNET</input></br></br>
+            <label for="gender" style="font-weight: bolder;">Gender</label></br>
+            <input type="radio" name="gender" value="Male">Male</input>
+            <input type="radio" name="gender" value="Female">Female</input>
+            <input type="radio" name="gender" value="Other">Other</input></br></br>
+            <label for="place" style="font-weight: bolder;">Places</label></br>
+            <select name="place" id="place">
+                <option value="A-Place">A-Place</option>
+                <option value="B-Place">B-Place</option>
+                <option value="C-Place">C-Place</option>
+                <option value="D-Place">D-Place</option>
+            </select></br></br></br>
+            <button id="submit" style="font-weight: bolder;">Submit</button>
+            <button id="submit" value="Clear Form" onclick="clearForm()"  style="font-weight: bolder;">Clear</button>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Skill</th>
+                        <th>Gender</th>
+                        <th>Places</th>
+                        <th>Edit & Delete</th>
+                        
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
