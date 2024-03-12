@@ -36,26 +36,392 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script>
         $(function () {
             $('#work').on('activate.bs.scrollspy')
         }); 
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <div class="rwheader row m-0">
-        <div class="col col-lg-1">
-        </div>
-        <div class="col col-lg-2  d-flex  align-items-center" style="width:50px;height: 70px;">
-            <img src="bookmyshow.png" style="width: 150px;height:50px;" alt="logo" />
+
+        <div class="col col-lg-2 d-flex justify-content-end align-items-center">
+            <img src="bookmyshow.png" style="height:50px;" alt="logo" />
         </div>
 
-        <div class="col col-lg-1">
+        <div class="col col-lg-4 d-flex align-items-center justify-content-center" style="">
+            <input type="text" id="txtplaceholder" placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                style="width: 100%;outline: none; height: 30px;" data-bs-toggle="modal"
+                data-bs-target="#myModal"></input>
         </div>
+        <div class="col col-lg-3">
+        </div>
+        <div class="col col-lg-3 d-flex flex-row justify-content-evenly align-items-center ">
+            <div><select name="" id="">
+                    <option value="">Chennai</option>
+                </select></div>
+            <div><button class="btn bg-danger text-light"><b>Sign in</b></button></div>
+            <div class="navicondiv">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <i class="material-icons" style="font-size:36px">menu</i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasExampleLabel">Hey!</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex flex-row align-items-center justify-content-evenly">
+                            <div>
+                                <img src="https://in.bmscdn.com/webin/movies/superstar/rewards_login.png" alt="">
+                            </div>
+                            <div>
+                                Unlock special offers & great benefits
+                            </div>
+                            <div>
+                                <h4><button type="button"
+                                        class="btn btn-outline-danger text-danger">Login/Register</button></h4>
+                            </div>
+
+
+                        </div>
+                        <div class="mt-2">
+                            <h5>Notifications</h5>
+                        </div>
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header" style="height: 60px;background-color: rgba(237, 237, 237, 0.5);">
+                    <!-- <div class="d-flex align-items-center " style="width: 30%;"> -->
+                    <input type="text" id="txtplaceholdermodal"
+                        placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                        style="width: 100%;outline: none; height: 30px;" data-bs-toggle="modal"
+                        data-bs-target="#myModal"></input>
+                    <!-- </div> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="rwnavtab row">
+                        <div class="col col-lg-12 ">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#home">MOVIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">CINEMAS</a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="pill" href="#home">Filter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#menu1">TAMIL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#menu2">ENGLISH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#menu3">TELUGU</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="pill" href="#menu4">HINDI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="pill">sasdsad</button>
+                                </li>
+                            </ul>
+                            <!-- <div class="tab-content">
+                                <div id="home" class="container tab-pane active"><br>
+                                    <h3>HOME</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rwlistdetails row m-0" style="background-color: rgb(245, 245, 245);">
+        <div class="col col-lg-5 ">
+            <div class="container mt-3">
+                <ul class="nav nav-pills d-flex ml-5 " role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu1">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu2">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu3">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu4">Plays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu5">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-4 " style="background-color: transparent;" data-bs-toggle="pill"
+                            href="#menu6">Activities</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <!-- <div class="tab-content">
+                    <div id="menu1" class="container tab-pane active"><br>
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.</p>
+                    </div>
+                    <div id="menu3" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium,
+                            totam rem aperiam.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="col col-lg-2">
+        </div>
+        <div class="col col-lg-5">
+            <ul class="nav nav-pills  d-flex justify-content-end  mt-3 mr-5 " role="tablist" style="color: black;">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fs-4" style="background-color: transparent;" data-bs-toggle="pill"
+                        href="#home">ListYourShow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fs-4" style="background-color: transparent;" data-bs-toggle="pill"
+                        href="#menu1">Corporates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fs-4" style="background-color: transparent;" data-bs-toggle="pill"
+                        href="#menu2">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fs-4" style="background-color: transparent;" data-bs-toggle="pill"
+                        href="#menu2">Gift Cards</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <!-- <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="rwslidertop row m-0">
+        <div class="col col-lg-12  ">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner ">
+                    <div class="item active  m-4 ">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1709211804201_redlorryweb.jpg"
+                            class=" rounded-5 " alt="Los Angeles" style="width:100%;">
+                    </div>
+                    <div class="item m-4">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1709297776147_primevolleyballleagueseason3chennaiweb.jpg"
+                            class=" rounded-5 " alt="Chicago" style="width:100%;">
+                    </div>
+                    <div class="item m-4">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1709542370849_chennaiyinfc202324webshowcase.jpg"
+                            class=" rounded-5 " alt="New York" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Recommmended Movies -->
+
+        <div class="rwrecommendmovie row m-0">
+
+            <div class="col col-lg-12">
+                <div class="columnarrange d-flex flex-column ">
+                    <div class="d-flex flex-row justify-content-between mt-5 ml-5">
+                        <div>
+                            <h1>Recommended Movies</h1>
+                        </div>
+                        <div><a href="#" class="text-danger fs-3" style="text-decoration: none;">See All ></a></div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around mt-3 m-0">
+                        <div>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICAxMTcuN0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386670-cfukbtjhrg-portrait.jpg"
+                                alt="" style="width:222px;height:378px;" class="rounded-4">
+                            <h2 class="mt-3"><b>Manjummel Boys</b></h2>
+                            <h3>Adventure/Drama/Thriller</h3>
+                        </div>
+                        <div>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4xLzEwICAzNEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00384234-namrszxlsp-portrait.jpg"
+                                alt="" style="width:222px;height:378px;" class="rounded-4">
+                            <h2 class="mt-3"><b>Shaitaan</b></h2>
+                            <h3>Supernatural/Thriller</h3>
+                        </div>
+                        <div>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA2NTYgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00389973-uealdrtfhz-portrait.jpg"
+                                alt="" style="width:222px;height:378px;" class="rounded-4">
+                            <h2 class="mt-3"><b>J Baby</b></h2>
+                            <h3>Drama/Family</h3>
+                        </div>
+                        <div>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA0OTIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00390048-zjeadtxjnh-portrait.jpg"
+                                alt="" style="width:222px;height:378px;" class="rounded-4">
+                            <h2 class="mt-3"><b>Guardian (2024)</b></h2>
+                            <h3>Comedy/Horror</h3>
+                        </div>
+                        <div>
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny45LzEwICAyOC40SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386605-uqlxfhnnrt-portrait.jpg"
+                                alt="" style="width:222px;height:378px;" class="rounded-4">
+                            <h2 class="mt-3"><b>Premalu</b></h2>
+                            <h3>Comedy/Romantic</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rwbanner row mt-5 m-0">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-10 m-0">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+                    alt="" class="w-100">
+            </div>
+            <div class="col col-lg-1"></div>
+        </div>
+
+        <div class="rwliveevent row m-0">
+            <div class="columnarrange d-flex flex-column ">
+                <div class="d-flex mt-5 ml-5">
+                    <div>
+                        <h1><b>The Best Of Live Events</b></h1>
+                    </div>
+                </div>
+                <div class="imgliveevent d-flex flex-row justify-content-around mt-3 m-0">
+
+                    <div>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png"
+                            alt="" style="width:222px;height:222px;" class="rounded-4">
+                    </div>
+                    <div>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-zone-collection-202211140440.png"
+                            alt="" style="width:222px;height:222px;" class="rounded-4">
+                    </div>
+                    <div>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MzUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png"
+                            alt="" style="width:222px;height:222px;" class="rounded-4">
+                    </div>
+                    <div>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTAgRXZlbnRz,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png"
+                            alt="" style="width:222px;height:222px;" class="rounded-4">
+                    </div>
+                    <div>
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                            alt="" style="width:222px;height:222px;" class="rounded-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rwpremiere row m-0 mt-5 ">
+            <div class="row m-0">
+                <div class="col col-lg-1"></div>
+                <div class="imgpremi col-lg-12" style="background-color: #2B3148;">
+                    <!-- <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png"
+                        alt=""> -->
+                </div>
+                <div class="col col-lg-1"></div>
+            </div>
+        </div>
+
 </body>
 
 </html>

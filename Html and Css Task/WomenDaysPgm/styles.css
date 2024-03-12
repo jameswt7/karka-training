@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+    box-shadow: 0px 0px 5px 12px rgb(116, 56, 173);
+    background-image: url(sky.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.PosterHead{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(155, 155, 233);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 166px;
+    
+}
+
+.round1{
+    position: relative;
+    background-color: #6c0d61;
+    width: 1900px;
+    height: 600px;
+    border-radius: 198px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+.round2{
+    position: absolute;
+    background-color: rgb(181, 144, 233);;
+    width: 600px;
+    height: 500px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+    right: 400px;
+    top: 50px;
+    /* align-items: center;
+    justify-content: center; */
+
+    border: 2px solid ;
+    border:none;
+    outline: white;
+    box-shadow: 0px 0px 5px 12px lightblue;
+
+}
+.round2 img{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    box-shadow: 0px 0px 5px 12px rgb(216, 162, 197);
+    width: 200px; 
+}
+
+.tit1{
+    font-size: 150px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 340px;
+    top: 10px;
+    background:transparent;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+
+}
+/* .tit1:hover{
+    background-color: rgba(100, 18, 177, 0.43);
+} */
+.tit2{
+    font-size:100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 270px;
+    top: 210px;
+    background:transparent;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    
+}
+
+.tit3{
+    font-size:60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 370px;
+    background:transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.circle1{
+    width: 150px;
+    height: 160px;
+    border-radius: 140px;
+    background-color: #fff;
+    border: none;
+    right: 1040px;
+    top: 10px;
+    display: flex;
+    position: absolute;
+    /* background:no-repeat;
+    background-image: url(sky.PNG);
+    background-size: cover; */
+    background-color: red;
+}
+.circle2{
+    width: 100px;
+    height: 100px;
+    border-radius: 148px;
+    background-color: #fff;
+    border: none;
+    right: 1100px;
+    top: 160px;
+    display: flex;
+    position: absolute;
+    background-color: green;
+    
+   
+}
+.circle3{
+    width: 75px;
+    height: 75px;
+    border-radius: 148px;
+    background-color: #fff;
+    border: none;
+    right: 1140px;
+    top: 250px;
+    display: flex;
+    position: absolute;
+    background-color: blue;
+}
+
+
+
+.circle4{
+    width: 150px;
+    height: 160px;
+    border-radius: 140px;
+    background-color: #fff;
+    border: none;
+    right: 70px;
+    top: 160px;
+    display: flex;
+    position: absolute;
+    /* background:no-repeat;
+    background-image: url(sky.PNG);
+    background-size: cover; */
+    background-color: red;
+}
+.circle5{
+    width: 100px;
+    height: 100px;
+    border-radius: 148px;
+    background-color: #fff;
+    border: none;
+    right: 150px;
+    top: 310px;
+    display: flex;
+    position: absolute;
+    background-color: green;
+    
+   
+}
+.circle6{
+    width: 75px;
+    height: 75px;
+    border-radius: 148px;
+    background-color: #fff;
+    border: none;
+    right: 200px;
+    top: 400px;
+    display: flex;
+    position: absolute;
+    background-color: blue;
+}
+
+.img{
+   
+ 
+    /* background: transparent; */
+ 
+}
+
+
+
+
+/* 
+.centercontent
+{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 190px;
+    top: 50px;
+} */
+

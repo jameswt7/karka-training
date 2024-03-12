@@ -31,7 +31,7 @@ button:hover {
 
 input {
 
-    width: 15%;
+    width: 10%;
     background-color: rgb(210, 172, 246);
     color: white;
     border: none;
@@ -39,14 +39,25 @@ input {
     margin: 10px;
   
 }
-
+input[type=checkbox] {
+    width: 1%;
+}
+input[type=radio] {
+    width: 1%;
+}
+input[type=text] {
+    width: 12%;
+}
+input[type=date] {
+    width: 12%;
+}
 h1 {
     text-align: center;
     border: 2px solid blueviolet;
     padding: 15px;
     border-radius: 10px;
     margin: 10px; 
-     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
 }
 
 table {
